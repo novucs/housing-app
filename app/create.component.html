@@ -1,0 +1,47 @@
+<ActionBar title="House Price Predictor" class="action-bar"></ActionBar>
+<ScrollView>
+    <StackLayout class="page" orientation="vertical">
+        <StackLayout class="form" orientation="vertical" backgroundColor="#f5f5f5">
+            <Label class="h1 text-center" text="Create a sold house record" color="#2f4f4f"></Label>
+
+            <StackLayout orientation="horizontal">
+                <Switch (checkedChange)="property.detached = !property.detached" class="switch"></Switch>
+                <Button isEnabled="false" text="Is the property detached?"
+                        backgroundColor="#f5f5f5"></Button>
+            </StackLayout>
+
+            <StackLayout orientation="horizontal">
+                <Switch (checkedChange)="property.garage = !property.garage" class="switch"></Switch>
+                <Button isEnabled="false" text="Does the property have a garage?"
+                        backgroundColor="#f5f5f5"></Button>
+            </StackLayout>
+
+            <Label class="label" text="Size (sq. ft)" textWrap="true"></Label>
+            <TextField keyboardType="number" class="input input-border" hint="Size (sq. ft)"
+                       (textChange)="property.size = parse($event.value)"></TextField>
+
+            <Label class="label" text="Total rooms" textWrap="true"></Label>
+            <TextField keyboardType="number" class="input input-border" hint="Total rooms"
+                       (textChange)="property.rooms = parse($event.value)">
+            </TextField>
+
+            <Label class="label" text="Total bedrooms" textWrap="true"></Label>
+            <TextField keyboardType="number" class="input input-border" hint="Total bedrooms"
+                       (textChange)="property.bedrooms = parse($event.value)">
+            </TextField>
+
+            <Label class="label" text="Energy rating" textWrap="true"></Label>
+            <TextField keyboardType="number" class="input input-border" hint="Energy rating"
+                       (textChange)="property.energyRating = parse($event.value)">
+            </TextField>
+
+            <Label class="label" text="Sale price" textWrap="true"></Label>
+            <TextField keyboardType="number" class="input input-border" hint="Sale price"
+                       (textChange)="property.salePrice = parse($event.value)">
+            </TextField>
+
+            <Button class="btn btn-primary" text="Submit" (tap)="submit()"></Button>
+            <Button class="btn" text="Go Back" (tap)="back()"></Button>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<ActionBar title="House Price Predictor" class="action-bar"></ActionBar>
+<ScrollView>
+    <StackLayout class="page" orientation="vertical">
+        <Image src="res://logo" width="75%" horizontalAlignment="center"></Image>
+        <Button class="btn btn-primary" text="Evaluate current property value" (tap)="goEvaluate()"></Button>
+        <Button class="btn btn-primary" text="Create sold property" (tap)="goCreate()"></Button>
+        <Button class="btn btn-primary" text="Populate database with defaults" (tap)="populateSoldProperties()"></Button>
+        <Button class="btn btn-primary" text="Delete sold properties database" (tap)="deleteSoldProperties()"></Button>
+    </StackLayout>
+</ScrollView>
