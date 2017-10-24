@@ -2,8 +2,8 @@ export const DEFAULT_DATABASE = [
     {
         location: {
             android: {},
-            latitude: 51.4970668,
-            longitude: -2.5448683,
+            latitude: 51.5012121,
+            longitude: -2.5483682,
             altitude: 0,
             horizontalAccuracy: 20,
             verticalAccuracy: 20,
@@ -23,8 +23,8 @@ export const DEFAULT_DATABASE = [
     {
         location: {
             android: {},
-            latitude: 51.4970668,
-            longitude: -2.5448683,
+            latitude: 51.5012121,
+            longitude: -2.5483682,
             altitude: 0,
             horizontalAccuracy: 20,
             verticalAccuracy: 20,
@@ -44,8 +44,8 @@ export const DEFAULT_DATABASE = [
     {
         location: {
             android: {},
-            latitude: 51.4970668,
-            longitude: -2.5448683,
+            latitude: 51.5012121,
+            longitude: -2.5483682,
             altitude: 0,
             horizontalAccuracy: 20,
             verticalAccuracy: 20,

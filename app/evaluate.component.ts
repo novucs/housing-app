@@ -164,11 +164,8 @@ export class EvaluateComponent {
                 }
             });
 
-            let price = closest.salePrice;
             let monthDiff = EvaluateComponent.monthDiff(new Date(closest.saleDate), this.property.saleDate);
-            console.log(price + "  " + (monthDiff / 3));
-            price += price * (monthDiff / 3);
-            console.log(price);
+            let price = closest.salePrice * Math.pow(1.03, monthDiff);
             this.property.salePrice = price;
             alert("The predicted price of your property is: \n$" + price);
         });
